@@ -1,0 +1,989 @@
+*{
+    font-family:Cairo;
+   
+    padding: 0;
+    box-sizing: border-box;
+    text-align: left;
+    margin-block-end: 0em;
+    margin-block-start: 0em;
+    padding-inline-start: 0px;
+    color: #407bff;
+    
+
+}
+
+body{
+    margin: 0px;
+  
+}
+
+.stop-scrolling {
+    height: 100%;
+    overflow: hidden;
+  }
+/*  =================================home page ============================== */
+header{
+    position:fixed;
+    z-index: 1;
+    width: 100%;
+    padding-right: 20px;
+    padding-top: 40px;
+}
+
+.test {
+    background-color:#407bff;
+    color: whitesmoke;
+    
+  }
+a{
+    text-decoration: none;
+}
+ul,li ,a{
+    display: inline;
+    color: #3967ca;
+
+
+}
+
+ul{
+    
+    margin-right: 10%;
+}
+
+li{
+   
+    
+    margin-left: 200px;
+}
+
+li a:hover{
+ 
+    background-color: #ff0157;
+    color: whitesmoke;
+    transition: 1s;
+    border-radius: 20px;
+    font-weight:bolder;
+    padding: 5px 20px;
+  
+}
+#header img {
+    top: 20px;
+    width:100px;
+    float: right;
+    display: inline;
+    /* margin-right: 20px; */
+}
+
+#onscroll{
+    display: none;
+   
+}
+
+p{
+    font-weight: 300;
+    color: #111;
+
+}
+.backGround{
+ 
+   max-width: 100%;
+    min-height:100vh;
+    
+    
+    /* border: 5px solid #01ff2b; */
+    background: url(Image/Background.jpg);
+    background-repeat: no-repeat;
+    background-size:contain;
+    background-position: center;
+    /* background-color: #ff0157; */
+   
+    
+
+
+}
+
+#light{
+    text-align: left;
+    margin-left: 250px;  
+    position: absolute;  
+    top: 28%;
+  
+
+    
+    
+}
+
+
+
+#light img{
+    
+  
+    width: 60px;
+    /* height:50px; */
+    position: relative; 
+    animation-name: light;
+    animation-duration: 2s;
+    animation-fill-mode:both;
+    animation-iteration-count: infinite;
+  
+   
+
+}
+
+@keyframes light {
+    /* 0%{transform: rotate(0deg);} */
+   0%{transform: rotate(30deg);}
+    50%{transform: rotate(-20deg);}
+    100%{transform: rotate(30deg);}
+}
+
+
+
+.banner{
+    /* float: right; */
+    position: absolute;
+    top: 35%;
+    right: 20px;
+    margin-right: 5px;
+    text-align: right;
+    animation-name: banner;
+    animation-duration: 2s;
+ 
+    
+    animation-iteration-count:unset;
+}
+@keyframes banner {
+    /* 0%{transform: rotate(0deg);} */
+   0%{transform: translateY(30%);opacity: 0%;}
+    /* 30%{transform: translateY(20%);opacity: 30%;}
+    60%{transform: translateY(10%);opacity: 60%;} */
+    100%{transform: translateY(0%);opacity: 100%;}
+}
+
+
+.banner .content h2{
+
+
+   /* position: relative; */
+
+   font-size: 5em; 
+   color: #407bff;
+  
+}
+
+.banner .content p{
+
+    font-size: 1em;
+   color: #999999;
+   
+   margin-right: 5px;
+   white-space:pre-line;
+   
+}
+
+
+.btn{
+    margin-right: 5px;
+    font-size: 1em;
+    color: #fff;
+    background: #ff0157;
+    display: inline-block;
+    padding: 10px 30px;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 0.5px;
+    transition: 0.5s;
+    text-align: right;
+
+}
+
+.btn:hover{
+    letter-spacing:4px ;
+
+}
+
+
+/* =======================================About Us ============================= */
+
+
+#AboutUsImage{
+    max-width: 40%;
+    float: left;
+    position: relative;
+    top: 30px;
+  
+
+}
+
+.AboutUsAnimation {
+
+    animation-name: aboutus;
+    animation-duration: 1s;
+    animation-fill-mode:both;
+    /* animation-iteration-count:1;  */
+    
+}
+
+@keyframes aboutus {
+
+    0%{transform: scale(0);}
+    70%{transform: scale(1.2);}
+    100%{transform: scale(1);}
+   
+    
+}
+
+
+#AboutUs{
+   
+   float: right;
+   white-space:pre-line;
+   margin-top: 110px;
+   max-width: 50%;
+   font-size: large;
+   margin-right: 10px;
+   text-align: right;
+   
+
+
+}
+#AB{
+    display: inline-block;
+    margin-top: 100px;
+    font-weight: bold;
+    
+ 
+}
+
+
+
+
+/* ============================== Department ================================= */
+
+#dep{
+
+   margin-top: 200px;
+}
+
+#dep h2{
+    text-align: center;
+    color: #407bff;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    /* margin-top: 20px; */
+}
+.ContainerFlex{
+    /* display: block; */
+    align-content: center;
+    display:flex;
+    flex-flow: row nowrap;
+    justify-content: center;    
+}
+.ContainerFlex div{
+    
+
+    
+    flex: 1 1 0px;
+    max-width: 20%;
+    margin: 10px;
+    margin-right: 50px;
+    /* background-color: #407bff; */
+    text-align: center;
+    box-shadow: 5px 0px 4px 2px rgb(233, 233, 233);
+    padding: 20px;
+    border-radius: 10px;
+    height: 250px;
+    /* perspective: 1000px; */
+    transition-duration: 0.5s;
+     transform-style:preserve-3d; 
+
+    /* -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;  */
+
+   
+
+
+}
+
+
+
+.ContainerFlex div img{
+    max-width: 50%;
+   
+}
+
+.ContainerFlex div > h4,p{
+    margin-top: 20px;
+    /* text-align: center; */
+    color: #575656;
+   
+}
+
+.Department div{
+    background-color: whitesmoke;
+  
+}
+/* .FlipCard{
+    position:absolute;
+ 
+  
+
+   
+} */
+
+
+/* 
+.FlipCard div p{
+    color: whitesmoke;
+    font-weight: normal;
+    margin-bottom: 10px;
+
+
+    
+}
+.FlipCard div{
+    background-color: #ff0157;
+    flex-shrink: 1;
+
+    
+} */
+
+
+
+.Department div:hover{
+    transform:scale(1.1);
+}
+
+.startButton {
+    background-color: #fff;
+    padding: auto;
+    color: #ff0157;
+    border-radius: 3px;
+    margin-top: 5px;
+    padding: 2px 30px;
+    cursor: pointer;
+   text-decoration: none;
+
+}
+
+/* .FlipCard div:hover{
+    transform: rotateY(180deg);
+} */
+
+#arow{
+
+    position:fixed;
+    z-index: 1;
+    width: 70px;
+    margin:30px;
+    height: 70px;
+    bottom: 15px;
+    right: 15px;
+    display: none;
+}
+#arow:hover{
+ cursor: pointer;
+}
+
+
+/* =========================Footer=================================== */
+
+footer{
+    position: relative;
+    margin: 0px;
+  
+    /* box-sizing: border-box; */
+    margin-top: 150px;
+   
+}
+footer h4{
+    text-align: center;
+   
+    
+   
+    color: whitesmoke;
+}
+
+footer div{
+    background-color:#3967ca;
+   
+    padding: 20px;
+}
+footer p{
+    color: whitesmoke;
+  
+
+}
+
+#Date{
+text-align: left;
+float: left;
+
+}
+
+
+
+
+
+/*  ================================ Media Quirey ========================== */
+
+@media screen and (max-width: 1030px){
+
+    #AboutUs{
+   
+        float: right;
+        white-space:pre-line;
+        margin-top: 110px;
+        max-width: 60%;
+        font-size:medium;
+        margin-right: 20px;
+  
+     }
+    
+
+     #light{
+         margin-left: 170px;
+
+     }
+
+    
+    #light img{
+      
+        width: 50px;
+        top: 20px;
+    }
+
+
+    .FlipCard div p{
+        font-size: 15px;
+    
+    
+        
+    }
+     
+    
+}
+
+
+
+
+@media screen and (max-width: 1000px){
+
+   
+/* 
+    #light img{
+     
+        width: 55px;
+
+    } */
+
+    #AboutUsImage{
+        max-width: 35%;
+        position: relative;
+    }
+    
+    
+#AboutUs{
+   
+    float: right;
+    white-space:pre-line;
+    margin-top: 40px;
+    max-width: 70%;
+    font-size: medium;
+    margin-right: 20px;
+    
+ 
+ 
+ }
+
+ 
+ @media screen and (max-width:980px) {
+
+    #light{
+        margin-left: 160px;
+    
+    }
+     
+ }
+   
+    
+   
+   
+    
+}
+
+@media screen and (max-width: 955px){
+
+    .FlipCard div p{
+        font-size: 12px;
+    
+    
+        
+    }
+
+    .banner .content h2{
+
+        font-size: 3em; 
+       
+     }
+     
+     .banner .content p{
+     
+         font-size: 15px;
+       
+        
+     }
+     #light img{
+        /* margin-left: 10%; 
+        width: 50px; */
+        top: 30px;
+    }
+
+    #light{
+        margin-left: 155px;
+    
+    }
+
+   
+}
+@media screen and (max-width: 900px){
+
+    .startButton {
+      
+        font-size: 12px;
+      
+        padding: 2px 20px;
+        cursor: pointer;
+       text-decoration: none;
+    
+    }
+
+    #light img{
+     
+        width: 40px;
+        top: 40px;
+
+    }
+    li{
+    
+        margin-right: 100px;
+    }
+  
+
+    #light{
+        margin-left: 150px;
+    
+    }
+
+
+    .btn{
+    
+        font-size: 15px;
+        
+        padding: 5px 15px;
+        box-sizing: border-box;
+    
+        
+    
+    }
+   
+}
+
+@media screen and (max-width: 870px){
+
+
+    .ContainerFlex div{
+        height: 300px;
+    }
+    #light{
+        margin-left: 140px;
+    
+    }
+    #light img{
+     
+        width: 35px;
+       
+
+    }
+
+    ul{
+        margin-right: 0%;
+    }
+    
+}
+
+@media screen and (max-width: 800px){
+
+ 
+
+    #light{
+        margin-left: 130px;
+
+    
+    }
+
+    #light img {
+        top:50px ;
+    }
+
+
+    #AboutUsImage{
+        max-width: 40%;
+        position: relative;
+         justify-content: center;    
+    }
+    
+    
+#AboutUs{
+   
+    float: right;
+    white-space:pre-line;
+    margin-top: 20px;
+    max-width: 50%;
+    font-size: medium;
+    margin-right: 20px;
+    
+ 
+ 
+ }
+
+ .ContainerFlex{
+    /* display: block; */
+ 
+    flex-flow: column wrap;
+  
+}
+
+.ContainerFlex div{
+
+    max-width: 50%;
+    height: 200px;
+    min-height: 200px; 
+
+     
+}
+   
+.FlipCard div{
+
+   
+    flex-shrink: 0;
+    margin-left: 20px;
+
+   
+}
+
+.ContainerFlex div img{
+
+   max-width: 20%;
+     
+}
+
+.ContainerFlex div h4{
+   font-size: medium;
+   
+}
+.FlipCard div p{
+    font-size: 12px;
+
+
+    
+}
+
+header ul {
+    display: none;
+}
+
+header #menuToggle{
+    position: relative;
+    width: 40px;
+    height: 40px;
+    background:url(Image/menuNonScroll.png);
+    background-size: 30px;
+    margin-left: 20px;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+}
+   
+header #menuToggle.active{
+ 
+    background:url(Image/close.png);
+    background-size: 30px;
+    margin-left: 20px;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+    color: #407bff;
+    
+   
+    
+}
+
+header .navigation.active{
+
+    width: 100%;
+    height:100vh;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color:#fff;
+    color: whitesmoke;
+    top: 0px;
+    left: 0px;
+    font-size: larger;
+    color: #407bff;
+   font-size: 2em; 
+   
+
+}
+
+
+li a{
+    color:#407bff;
+}
+
+
+
+li a:hover{
+ 
+    background-color:#ff0157;
+    color: whitesmoke;
+
+    
+    font-weight: bolder;
+    transition:none;
+  
+    padding: 5px 10px;
+    margin-top: 20px;
+  
+}
+
+
+     
+    
+}
+
+
+@media screen and (max-width: 750px){
+
+   
+    .ContainerFlex div{
+        height: 200px;
+    }
+    .backGround{
+
+    
+         background-size:100% 70%;
+ 
+     }
+
+     #light{
+        margin-left: 120px;
+
+    
+    }
+     #light img {
+        top:50px ;
+    }
+
+    .banner .content h2{
+
+        font-size:2.5em; 
+       
+     }
+     
+     .banner .content p{
+     
+         font-size: 12px;
+       
+        
+     }
+    
+     
+   
+
+}
+
+@media screen and (max-width: 700px){
+
+
+    .backGround{
+
+    
+         background-size:100% 60%;
+ 
+     }
+
+     #light{
+        margin-left: 110px;
+
+    
+    }
+     #light img {
+        top:60px ;
+    }
+
+   
+
+}
+
+@media screen and (max-width: 650px){
+
+    .ContainerFlex div img{
+        max-width: 40%;
+       
+    }
+    .backGround{
+
+    
+         background-size:100% 50%;
+ 
+     }
+
+     #light{
+        margin-left: 95px;
+
+    
+    }
+     #light img {
+        top:70px ;
+        width: 30px;
+    }
+    
+
+   
+
+}
+
+@media screen and (max-width: 600px){
+
+   
+    .backGround{
+
+    
+         background-size:100% 60%;
+ 
+     }
+
+     #light{
+        margin-left: 95px;
+
+    
+    }
+     #light img {
+        top:60px ;
+        width: 30px;
+    }
+    
+
+    #AboutUs{
+        font-size:12px; 
+        font-weight: bold;    
+
+     
+     }
+   
+
+}
+
+
+@media screen and (max-width: 550px){
+
+   
+    .backGround{
+
+    
+         background-size:100% 50%;
+ 
+     }
+
+     #light{
+        margin-left: 90px;
+
+    
+    }
+     #light img {
+        top:70px ;
+        width: 25px;
+    }
+    
+
+    #AboutUs{
+        font-size:12px; 
+        font-weight: bold;    
+
+     
+     }
+   
+
+}
+
+@media screen and (max-width: 500px){
+
+   
+    .backGround{
+
+    
+         background-size:100% 50%;
+         display: none; 
+     }
+
+     #light{
+        /* margin-left: 80px; */
+        display: none;
+       
+    
+    }
+     /* #light img {
+        top:70px ;
+        width: 25px;
+    } */
+    
+
+    #AboutUsImage{
+     display: none;  
+   
+    }
+    #AboutUs{
+        font-size:15px; 
+        font-weight: bold;  
+        margin-top: 20px; 
+        justify-content: center;
+        max-width: 100%;
+        text-align: center;
+       margin-left: 10px;
+     
+     }
+
+     .banner{
+        /* float: right; */
+        position:relative;
+       top: 200px;
+     
+        margin-left: 30px;
+        
+
+     
+     margin-bottom: 200px;
+        
+ 
+    }
+   
+
+}
+
+
+@media screen and (max-width: 400px){
+
+   
+    
+    .ContainerFlex div {
+        max-width: 70%;
+       
+    }
+
+
+}

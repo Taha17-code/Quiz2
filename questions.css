@@ -1,0 +1,85 @@
+body{
+    overflow: hidden;
+    text-align: center;
+    margin-block-start: 0px;
+    margin-inline-start: 0px;
+    font-family:Cairo;
+}
+
+
+
+header{
+    position:relative;
+    z-index: 1;
+    width: 100%;
+    padding-right: 20px;
+    padding-top: 40px;
+    background-color: #3967ca;
+   
+    height: 50px;
+}
+
+header a{
+    text-decoration: none;
+    color: whitesmoke;
+    float: left;
+    margin-left: 20px;
+
+    background-color: #ff0157;
+
+    transition: 1s;
+    border-radius: 20px;
+    padding: 5px 20px;
+}
+
+
+
+#header img {
+    top: 10px;
+    width:100px;
+    float: right;
+    display: inline;
+    margin-right: 20px;
+}
+
+
+
+
+#counter{
+    background-color: #ff0157;
+    color: whitesmoke;
+    border-radius: 30px;
+    padding:  5px 15px;
+    margin-bottom: 20px;
+    font-size: 25px;
+  
+}
+
+
+#outer{
+    margin: auto;
+ 
+    background-color: #3967ca;
+    width: 70%;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    margin-top: 10px;
+    
+
+}
+
+#outer p{
+    /* to keep text inside the shape  */
+    overflow-wrap: break-word;
+ 
+}
+
+#QuestionsBox p{
+    background-color: #c6d8ff;
+
+    border-radius: 10px;
+    cursor: pointer;
+ 
+    
+}
