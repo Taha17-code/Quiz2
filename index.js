@@ -1,3 +1,4 @@
+
 let dep=document.getElementById('dep');
 
 // console.log(dep.childNodes[1].nodeName);
@@ -151,21 +152,7 @@ if (document.documentElement.scrollTop > 150 ) {
 
 
 
- 
-//  the way is called (promise) to fetch or get data from server  its old way
-
-//   fetch("https://opentdb.com/api.php?amount=40&category=21")
-// .then(function(response){
-//     return response.json();
-// }).then(function(data){
-//     console.log(data)
 
 
 
 
-
-
-let op=0
-while(op<20){
-    console.log("Hello Employee"+op+1)
-}
