@@ -69,7 +69,7 @@ window.onload= async function GetApiData(){
      if(qu>19){
         document.body.innerHTML = "";
         let elh1=document.createElement('h1');
-        elh1.innerHTML="Your Score is : "+score+"/200";
+        elh1.innerHTML="Your Score is : "+score+"/100";
       
         btnn.style.backgroundColor="#ff0157";
         btnn.style.padding="10px";
@@ -124,9 +124,9 @@ window.onload= async function GetApiData(){
             MultiChoices[p].style.backgroundColor ="green";
             qu+=1;
             QuestionNumber.innerHTML=qu+1 +"-";
-            score+=10;
+            score+=5;
             chek=[];
-            counter=11;
+            counter=20;
             /*/ clear interval  عشان العداد لما اجاوب وينتقل للسؤال الثاني دايما العداد يبدا يسرع 
                 ف عشان كذا نسوي  كلير ونعيد نسوي سيت مرة ثانية*/
             clearInterval(counterInterval);
@@ -142,7 +142,7 @@ window.onload= async function GetApiData(){
             qu+=1;
             QuestionNumber.innerHTML=qu+1 +"-";
             chek=[];
-            counter=11;
+            counter=20;
             clearInterval(counterInterval);
             // count.innerHTML=counter;
             GetApiData()
@@ -166,7 +166,7 @@ window.onload= async function GetApiData(){
         if(counter<=0){
             qu+=1;
             QuestionNumber.innerHTML=qu+1 +"-";
-            counter=11;
+            counter=20;
             chek=[];
             clearInterval(counterInterval);
            return GetApiData();
