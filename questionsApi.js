@@ -244,7 +244,7 @@ function displayAnswers(){
 
 let count=document.getElementById("counter");
 
-let counter=11;
+let counter=20;
 
 
    
